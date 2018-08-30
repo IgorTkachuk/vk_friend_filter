@@ -1,0 +1,63 @@
+body {
+    font: bold 12px Helvetica;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.friends {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 500px;
+    overflow-y: scroll;
+    border: 1px dashed; 
+    min-width: 200px;
+}
+
+.friend {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    width: 220px;
+    margin: 5px;
+}
+
+.friend img {
+    border-radius: 50%;
+    margin: 0 10px 0 0;
+}
+
+.sign {
+    font-weight: 900;
+    font-size: 11pt;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width:6px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #aaa;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: #777;
+}
+
+::-webkit-scrollbar-track{
+    border-width:0;
+}
+
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}
